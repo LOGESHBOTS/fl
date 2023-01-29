@@ -1,5 +1,7 @@
 #(c) Adarsh-Goel
 import os
+import json
+import requests
 import asyncio
 from asyncio import TimeoutError
 from Adarsh.bot import StreamBot
@@ -8,6 +10,7 @@ from Adarsh.utils.human_readable import humanbytes
 from Adarsh.vars import Var
 from urllib.parse import quote_plus
 from pyrogram import filters, Client
+from pyrogram.enums.parse_mode import ParseMode
 from pyrogram.errors import FloodWait, UserNotParticipant
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 
